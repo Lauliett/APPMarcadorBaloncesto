@@ -22,6 +22,7 @@ public class ScoreActivity extends AppCompatActivity {
         setContentView(R.layout.activity_score);
         initElements();
         recogerDatos();
+        getSupportActionBar().hide();
     }
 
     private void initElements(){

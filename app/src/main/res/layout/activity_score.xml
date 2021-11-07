@@ -15,15 +15,15 @@
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:adjustViewBounds="true"
-        android:scaleType="centerInside"
+        android:scaleType="fitXY"
         android:src="@drawable/partido_baloncesto_resultado"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txtAsPuntosVisitante"
@@ -90,12 +90,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="txtResultado"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintStart_toEndOf="@+id/txtGanador2"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <TextView
+        android:id="@+id/txtGanador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Equipo ganador:"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="35dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.841" />
+        app:layout_constraintVertical_bias="0.865" />
 </androidx.constraintlayout.widget.ConstraintLayout>
